@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Set direction to column */
+    min-height: 100vh; 
+
+        
+        background-size: cover; /* Ensure the image covers the whole page */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        min-height: 100vh; /* Ensure the body covers the viewport height */
+
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner {
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 4000px; /* Increased height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.banner h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.main {
+    flex: 1; /* Allow main to grow and push footer down */
+    padding: 20px;
+}
+
+.hotels, .reservations {
+    margin-top: 30px;
+}
+
+.hotel-list, .reservation-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Hotel cards and reservation cards */
+.hotel, .reservation {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.hotel img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Hover effect for hotel cards */
+.hotel:hover {
+    transform: scale(1.05); /* Slightly increase the size of the card */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Increase the box shadow for depth */
+    background-color: rgba(255, 255, 255, 0.9); /* Change the background color slightly */
+}
+
+.reservation-form {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation-form input, .reservation-form select, .reservation-form button {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto; /* Pushes footer to the bottom of the page */
+}
+
+.button {
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    text-decoration: none; /* Removes underline */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.reservation {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for reservation cards */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px; /* Rounded corners for the cards */
+}
